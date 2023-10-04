@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ - 2</title> 
+    <link rel="stylesheet" href="2style.css"> 
+</head>
+<body>
+  <header>
+      <div style="width:100%; background-color:#ffa500; padding: 10px; height:120px;">
+      <a href="#" class="Logo"><img src="logo1.png" width="50" height="50" alt="Logo"></a>
+      <a href="#" class="title">Infinity</a>
+      <nav class="shapka">
+        <ul>        
+          <li><a href="index.html"> Главная </a></li> 
+          <li><a href="second.html"> Каталог </a></li> 
+          <li><a href="#tabl"> Таблица </a></li> 
+          <li><a href="#silka"> Форма </a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="main">
+      <nav class="Spisok">
+        <ul> 
+    <li><a href="http://kubsu.ru/">КубГУ</a></li> 
+    <li><a href="https://kubsu.ru/">КубГУ</a></p></li>  
+    <li><a href="http://kubsu.ru/"><img src="1111.png" width="500"></a></li> 
+    <li><a href="/second.html">Сокращенная ссылка на внутреннюю страницу</a></li> 
+    <li><a href="/index.html"> Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#silka">Ссылка на фрагмент текущей страницы</a></li> 
+    <li><a href="https://yandex.ru/search/?text=russia&lr=56&clid=456889"> Ссылка с 3 параметрами в URL </a></li> 
+    <li><a href="http://kubsu.ru/?id=fhttjk45"> Ссылка с параметром id в URL</a></li>
+    <li><a href="./second.html"> Относительную на страницу в текущем каталоге</a></li>
+    <li><a href="./about/about.html"> Относительная ссылка на страницу в каталоге about</a></li>
+    <li><a href="../pogodasuda.html">Ссылка на страницу уровнем выше</a> </li> 
+    <li><a href="../../advasuda.html">Ссылка на страницу двумя уровнями выше</a></li>
+    <li>Контекстная ссылка в тексте<a href="https://yandex.ru/search/?clid=2380813&text=яндекс&l10n=ru&lr=11005">на сайт</a> Яндекса </li>
+    <li><a href="https://en.wikipedia.org/wiki/History_of_England">Ссылка на фрагмент на другом сайте</a></li>
+    <li>Ссылка в прямоугольной и круглой области<br />
+        <img src="123.png" alt="Фото для задания" width="200" height="100" usemap="#ff">
+        <map name="ff">
+            <area shape="rect" coords="8,8,100,100" href="https://www.kinopoisk.ru/film/1395369/?utm_referrer=www.google.com" alt="КВАДРАТ">
+            <area shape="circle" coords="200,75,80" href="https://kubstu.ru/" alt="КРУГ">
+          </map>
+    </li>
+    <li><a href="">Ссылка с пустым href</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li><a href="https://www.youtube.com" rel="nofollow"> Ссылка по которой запрещен переход поисковикам</a></li>
+    <li><a href="https://www.youtube.com" rel="nofollow"><noindex>Ссылка запрещенная для индексации</noindex></a></li>
+    <ol>
+        <li><a href="https://auto.ru/cars/all/" title="link 1">Нумерованный список ссылок с подписями title 1</a></li>
+        <li><a href="https://auto.ru/catalog/cars/" title="link 2">Нумерованный список ссылок с подписями title 2</a></li>
+        <li><a href="https://auto.ru/dilery/cars/all/" title="link 3">Нумерованный список ссылок с подписями title 3</a></li>
+    </ol>
+    <li><a href="ftp://demo:12345@test.rebex.net/readme.txt">Ссылку на файл на сервере FTP с авторизацией</a></li>
+  </nav>
+    <table>
+      <caption id="tabl">Таблица</caption>
+      <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>График работы</th>
+        <th>ЗП</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ангелина</td>
+        <td>Каспарова</td>
+        <td>Пн-Чт</td>
+        <td rowspan="2">38000</td>
+      </tr>
+      <tr>
+        <td>Артем</td>
+        <td>Калайджян</td>
+        <td>Ср-Сб</td>
+      </tr>
+      <tr>
+        <td>Ким</td>
+        <td>Кардашьян</td>
+        <td>Пн-Сб</td>
+        <td>65000</td>
+      </tr>
+      <tr>
+        <td>Витя</td>
+        <td>Альварес</td>
+        <td>Вс-Ср</td>
+        <td>38000</td>
+      </tr>
+      <tr>
+        <td colspan="2">Стив</td>
+        <td>Пн-Пт</td>
+        <td>60000</td>
+      </tr>
+      <tr>
+        <td>Гарик</td>
+        <td>Харламов</td>
+        <td>Чт-Вс</td>
+        <td>38000</td>
+      </tr>
+    </tbody>
+    </table>
+    
+    <h2 id="silka">Форма:</h2>
+    <form action="/" method="POST">
+    <label>
+    ФИО:<br />
+    <input type="text" name="student_name" placeholder="Введите ФИО">
+    </label><br />
+    <label>
+    Номер телефона:<br />
+    <input type="number" name="student_pnone">
+    </label><br />
+    <label>
+    Email:<br />
+    <input type="email" name="email" placeholder="Введите вашу почту">
+    </label><br />
+    <label>
+    Дата рождения:<br />
+    <input type="date" name="date">
+    </label><br />
+    <label>
+    Пол:<br />
+      <input name=sex type="radio" value="male">
+      Мужской</label>
+    <label>
+      <input name=sex type="radio" value="female">
+      Женский</label> <br />
+    <label>
+    Любимый язык программирования: <br>
+    <select name="PL[]" multiple="multiple">
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="Haskel">Haskel</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+    </select>
+    </label><br />
+    <label>
+    Биография:<br />
+    <textarea name="student_bio"></textarea>
+    </label><br />
+    <label> С контрактом ознакомлен(а):<input type="checkbox" name="check"></label><br />
+    <input type="submit" value="Сохранить">
+    </form>
+  </div>
+  </div>
+  <footer>
+    Галстян Владимир 
+  </footer>
+</body>
+</html>
